@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Business OS — Donnez une direction concrète à votre IA</title>
+<meta name="description" content="Dirigeants : identifiez les tâches répétitives à examiner et explorez un premier cas d’usage IA adapté à votre activité.">
+<meta name="theme-color" content="#741F39">
+<meta property="og:title" content="AI Business OS — L’IA au service de vos priorités">
+<meta property="og:description" content="Partez d’un processus concret. Explorez un premier cas d’usage IA. Gardez le contrôle.">
+<meta property="og:type" content="website">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{wine:'#741F39',wineDark:'#521329',ink:'#242329',paper:'#FAF9F7',silver:'#E7E5E4'},fontFamily:{sans:['Inter','ui-sans-serif','system-ui','sans-serif']},boxShadow:{soft:'0 24px 70px -25px rgba(36,35,41,.22)'}}}};</script>
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:100px}body{-webkit-font-smoothing:antialiased}::selection{background:#741F39;color:white}summary{list-style:none}summary::-webkit-details-marker{display:none}details[open] .faq-plus{transform:rotate(45deg)}:focus-visible{outline:3px solid #A64F69;outline-offset:5px}input,textarea{font:inherit}.grid-pattern{background-image:linear-gradient(rgba(116,31,57,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(116,31,57,.045) 1px,transparent 1px);background-size:30px 30px}
+/* Halo bordeaux et reflet argenté conservés. */
+.cta-glow{position:relative;isolation:isolate;overflow:hidden;box-shadow:0 0 0 1px rgba(166,79,105,.16),0 5px 18px rgba(116,31,57,.19),0 0 27px rgba(166,79,105,.14),inset 0 1px 0 rgba(255,255,255,.25);transition:box-shadow .3s ease,background-color .3s ease,color .3s ease}
+.cta-glow::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.13),transparent 55%);border-radius:inherit}
+.cta-glow::after{content:'';position:absolute;inset:-50% -70%;z-index:0;pointer-events:none;background:linear-gradient(110deg,transparent 42%,rgba(231,229,228,.12) 46%,rgba(255,255,255,.5) 50%,rgba(231,229,228,.12) 54%,transparent 58%);transform:translateX(-75%);opacity:0}
+.cta-glow>span{position:relative;z-index:1}
+.cta-glow:focus-visible{box-shadow:0 0 0 1px rgba(166,79,105,.3),0 8px 26px rgba(116,31,57,.28),0 0 40px rgba(166,79,105,.28),inset 0 1px 0 rgba(255,255,255,.35)}
+.cta-glow:focus-visible::after{animation:button-shine .9s ease-out both}
+.cta-glow-soft{box-shadow:0 0 0 1px rgba(166,79,105,.08),0 3px 14px rgba(116,31,57,.09),0 0 22px rgba(166,79,105,.09),inset 0 1px 0 rgba(255,255,255,.6)}
+@media(hover:hover){.cta-glow:hover:not(:disabled){box-shadow:0 0 0 1px rgba(166,79,105,.3),0 8px 26px rgba(116,31,57,.28),0 0 40px rgba(166,79,105,.28),inset 0 1px 0 rgba(255,255,255,.35)}.cta-glow:hover:not(:disabled)::after{animation:button-shine .9s ease-out both}}
+.cta-glow:active:not(:disabled){box-shadow:0 0 20px rgba(166,79,105,.25)}.cta-glow:disabled{box-shadow:none}.cta-glow:disabled::after{animation:none;opacity:0}
+@keyframes button-shine{0%{transform:translateX(-75%);opacity:0}15%{opacity:1}80%{opacity:1}100%{transform:translateX(75%);opacity:0}}
+/* Tous les boutons et liens CTA bondissent en continu, y compris au survol. */
+.cta-glow,button,[role="button"],input[type="submit"],input[type="button"],input[type="reset"]{animation:button-bounce 1.65s infinite;transform-origin:center bottom}
+@keyframes button-bounce{0%,100%{transform:translateY(0);animation-timing-function:cubic-bezier(.22,.61,.36,1)}35%{transform:translateY(-8px);animation-timing-function:cubic-bezier(.55,0,.8,.45)}65%{transform:translateY(0);animation-timing-function:ease-out}82%{transform:translateY(-3px);animation-timing-function:ease-in}}
+button:disabled,input:disabled,.cta-glow:disabled,[aria-disabled="true"]{animation:none;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.cta-glow,button,[role="button"],input[type="submit"],input[type="button"],input[type="reset"]{transform:none!important}.cta-glow::after{display:none}}
+</style>
+</head>
+<body class="bg-paper font-sans text-ink">
+<a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-white focus:p-4 focus:rounded-lg">Aller au contenu</a>
+<header id="navigation" class="sticky top-0 z-40 border-b border-silver/80 bg-paper/95 backdrop-blur-lg">
+<nav aria-label="Navigation principale" class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-5 sm:px-8">
+<a href="#hero" aria-label="AI Business OS, accueil" class="flex items-center gap-3"><span aria-hidden="true" class="flex h-10 w-10 items-center justify-center rounded-xl bg-wine text-sm font-semibold tracking-tight text-white">AI</span><span class="text-base font-semibold tracking-tight sm:text-lg">Business <span class="font-normal text-stone-500">OS</span></span></a>
+<div class="hidden items-center gap-8 text-sm font-medium text-stone-600 md:flex"><a href="#enjeux" class="hover:text-wine">Les enjeux</a><a href="#methode" class="hover:text-wine">La méthode</a></div>
+<a href="#inscription" class="cta-glow cta-glow-soft inline-flex items-center gap-2 rounded-full border border-wine/25 px-4 py-2.5 text-xs font-semibold text-wine hover:bg-wine hover:text-white sm:px-5 sm:text-sm"><span>Parlons de votre activité</span><span aria-hidden="true">↗</span></a>
+</nav>
+</header>
+<main id="contenu">
+<!-- SECTION 1 / 5 : HERO -->
+<section id="hero" aria-labelledby="hero-title" class="relative overflow-hidden px-5 pb-20 pt-16 sm:px-8 lg:pb-28 lg:pt-24">
+<div aria-hidden="true" class="pointer-events-none absolute -right-40 top-8 h-[550px] w-[550px] rounded-full bg-wine/[.06] blur-3xl"></div>
+<div class="relative mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.12fr_1fr] lg:gap-16">
+<div>
+<p class="mb-7 inline-flex items-center gap-2 rounded-full border border-wine/15 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[.13em] text-wine"><span aria-hidden="true" class="h-1.5 w-1.5 rounded-full bg-wine"></span>Pour les dirigeants qui veulent avancer</p>
+<h1 id="hero-title" class="max-w-3xl text-4xl font-semibold leading-[1.08] tracking-[-.045em] sm:text-5xl lg:text-[64px]">Moins de tâches répétitives.<br><span class="text-wine">Plus de place pour diriger.</span></h1>
+<p class="mt-7 max-w-xl text-lg leading-relaxed text-stone-600">Avec AI Business OS, explorez comment utiliser l’IA dans votre activité : partez d’un processus concret, identifiez ce qui mérite d’être automatisé et gardez la main sur les décisions.</p>
+<a href="#inscription" class="cta-glow mt-9 inline-flex items-center justify-center gap-4 rounded-xl bg-wine px-6 py-4 text-sm font-semibold text-white hover:bg-wineDark"><span>Explorer mon premier cas d’usage</span><span aria-hidden="true">↗</span></a>
+<p class="mt-4 text-sm text-stone-500">Une première prise de contact. Aucun achat.</p>
+<div class="mt-9 flex flex-wrap gap-x-6 gap-y-3 border-t border-silver pt-6 text-xs font-medium text-stone-600"><span>Approche progressive</span><span aria-hidden="true">·</span><span>Priorités métier</span><span aria-hidden="true">·</span><span>Contrôle humain</span></div>
+</div>
+<div class="relative">
+<div class="grid-pattern rounded-[28px] border border-white bg-[#F0EDEB] p-5 shadow-soft sm:p-8">
+<div class="mb-7 flex items-center justify-between gap-3"><span class="text-xs font-semibold uppercase tracking-[.16em] text-stone-500">Du besoin à l’action</span><span class="rounded-full bg-white px-3 py-1 text-[10px] font-medium text-stone-500">Schéma illustratif</span></div>
+<div class="rounded-2xl border border-white bg-white/95 p-6 shadow-sm"><div class="flex items-center gap-3"><span aria-hidden="true" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-stone-100 text-lg">≡</span><p class="font-semibold">Votre quotidien opérationnel</p></div><div class="mt-5 flex flex-wrap gap-2"><span class="rounded-lg border border-silver px-3 py-2 text-xs text-stone-600">Informations dispersées</span><span class="rounded-lg border border-silver px-3 py-2 text-xs text-stone-600">Suivis manuels</span><span class="rounded-lg border border-silver px-3 py-2 text-xs text-stone-600">Tâches récurrentes</span></div></div>
+<div aria-hidden="true" class="mx-auto h-8 w-px bg-wine/30"></div>
+<div class="rounded-2xl bg-wine p-6 text-white shadow-lg shadow-wine/15"><div class="flex items-center justify-between gap-3"><p class="text-xl font-semibold tracking-tight">Un cas d’usage à évaluer</p><span aria-hidden="true" class="text-2xl text-white/60">✧</span></div><p class="mt-2 text-sm leading-relaxed text-white/75">Un objectif clair. Un périmètre limité.<br>Des validations humaines.</p><div class="mt-5 h-px bg-white/20"></div><p class="mt-4 text-xs font-medium uppercase tracking-widest text-white/80">Cibler → Évaluer → Tester</p></div>
+<div aria-hidden="true" class="mx-auto h-8 w-px bg-wine/30"></div>
+<div class="flex items-center gap-3 rounded-2xl border border-silver bg-white p-5"><span aria-hidden="true" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-wine/10 text-wine">✓</span><div><p class="text-sm font-semibold">Vous gardez la décision.</p><p class="mt-1 text-xs text-stone-500">L’IA assiste. Votre équipe arbitre.</p></div></div>
+</div>
+<p class="mt-4 text-center text-xs text-stone-500">Illustration de la démarche proposée, pas une interface produit.</p>
+</div>
+</div>
+</section>
+<!-- SECTION 2 / 5 : ENJEUX ET BENEFICES RECHERCHES -->
+<section id="enjeux" aria-labelledby="enjeux-title" class="border-y border-silver bg-white px-5 py-20 sm:px-8 lg:py-24">
+<div class="mx-auto max-w-7xl">
+<div class="grid gap-6 md:grid-cols-2 md:items-end"><div><p class="text-xs font-semibold uppercase tracking-[.18em] text-wine">01 / Le point de départ</p><h2 id="enjeux-title" class="mt-4 max-w-lg text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Votre temps mérite mieux que le copier-coller.</h2></div><p class="max-w-lg text-base leading-relaxed text-stone-600 md:justify-self-end">Le bon point de départ n’est pas un outil. C’est une friction : une tâche qui revient, ralentit une équipe ou mobilise inutilement votre attention.</p></div>
+<div id="benefices" class="mt-12 grid gap-5 md:grid-cols-3">
+<article class="rounded-2xl border border-silver bg-paper p-7"><span aria-hidden="true" class="flex h-11 w-11 items-center justify-center rounded-xl border border-wine/10 bg-white text-xl text-wine">⌕</span><h3 class="mt-6 text-lg font-semibold">L’information est partout.</h3><p class="mt-3 text-sm leading-7 text-stone-600">Retrouver un document, recouper des échanges, préparer une synthèse : le contexte se reconstruit à chaque fois.</p><p class="mt-6 border-t border-silver pt-5 text-sm font-medium text-wine">À explorer : mieux rassembler et synthétiser.</p></article>
+<article class="rounded-2xl border border-silver bg-paper p-7"><span aria-hidden="true" class="flex h-11 w-11 items-center justify-center rounded-xl border border-wine/10 bg-white text-xl text-wine">↻</span><h3 class="mt-6 text-lg font-semibold">Les suivis s’accumulent.</h3><p class="mt-3 text-sm leading-7 text-stone-600">Relancer, mettre à jour, transmettre : des actions simples qui demandent une vigilance constante.</p><p class="mt-6 border-t border-silver pt-5 text-sm font-medium text-wine">À explorer : faciliter les rappels et transmissions.</p></article>
+<article class="rounded-2xl border border-silver bg-paper p-7"><span aria-hidden="true" class="flex h-11 w-11 items-center justify-center rounded-xl border border-wine/10 bg-white text-xl text-wine">▤</span><h3 class="mt-6 text-lg font-semibold">Vous repartez de zéro.</h3><p class="mt-3 text-sm leading-7 text-stone-600">Comptes rendus, réponses récurrentes, documents internes : les mêmes formats mobilisent encore vos équipes.</p><p class="mt-6 border-t border-silver pt-5 text-sm font-medium text-wine">À explorer : préparer des brouillons à valider.</p></article>
+</div>
+</div>
+</section>
+<!-- SECTION 3 / 5 : SOLUTION ET METHODE -->
+<section id="methode" aria-labelledby="methode-title" class="px-5 py-20 sm:px-8 lg:py-24">
+<div class="mx-auto max-w-7xl">
+<div class="max-w-2xl"><p class="text-xs font-semibold uppercase tracking-[.18em] text-wine">02 / Une approche raisonnée</p><h2 id="methode-title" class="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Commencer petit.<br>Tester utile. Garder le contrôle.</h2><p class="mt-5 leading-relaxed text-stone-600">Pas besoin de tout transformer pour commencer à réfléchir. Voici la démarche proposée pour examiner un premier cas d’usage.</p></div>
+<ol id="etapes" class="mt-12 grid gap-8 md:grid-cols-3">
+<li class="border-t border-wine/25 pt-6"><span class="text-sm font-semibold text-wine">01 — Cibler</span><h3 class="mt-5 text-xl font-semibold">Une priorité, pas dix.</h3><p class="mt-3 text-sm leading-7 text-stone-600">Choisir un processus répétitif et définir ce que vous souhaitez améliorer : délai, qualité ou charge de travail.</p></li>
+<li class="border-t border-wine/25 pt-6"><span class="text-sm font-semibold text-wine">02 — Évaluer</span><h3 class="mt-5 text-xl font-semibold">Regarder la réalité en face.</h3><p class="mt-3 text-sm leading-7 text-stone-600">Examiner les données disponibles, les outils existants et les contraintes. Identifier ce qui nécessite une validation humaine.</p></li>
+<li class="border-t border-wine/25 pt-6"><span class="text-sm font-semibold text-wine">03 — Tester</span><h3 class="mt-5 text-xl font-semibold">Mesurer avant d’élargir.</h3><p class="mt-3 text-sm leading-7 text-stone-600">Commencer sur un périmètre limité, comparer avec la situation initiale et décider de la suite à partir des observations.</p></li>
+</ol>
+<div class="mt-12 flex flex-col justify-between gap-5 rounded-2xl border border-silver bg-white px-7 py-6 sm:flex-row sm:items-center"><p class="text-sm text-stone-600"><strong class="font-semibold text-ink">Le principe :</strong> automatiser avec discernement, pas à tout prix.</p><a href="#inscription" class="cta-glow cta-glow-soft inline-flex shrink-0 items-center justify-center gap-3 rounded-xl border border-wine/15 bg-white px-4 py-3 text-sm font-semibold text-wine hover:bg-wine hover:text-white"><span>Parlons de votre priorité</span><span aria-hidden="true">↗</span></a></div>
+</div>
+</section>
+<!-- SECTION 4 / 5 : OFFRE DE CONTACT ET CAPTURE -->
+<section id="inscription" aria-labelledby="capture-title" class="bg-wineDark px-5 py-20 sm:px-8 lg:py-24">
+<div class="mx-auto grid max-w-7xl items-start gap-12 lg:grid-cols-2 lg:gap-20">
+<div class="pt-2 text-white"><p class="text-xs font-semibold uppercase tracking-[.18em] text-[#E8B8C7]">03 / Passons à votre activité</p><h2 id="capture-title" class="mt-5 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Quel processus aimeriez-vous simplifier en premier ?</h2><p class="mt-6 max-w-md text-lg leading-relaxed text-white/75">Décrivez votre besoin pour demander un échange autour d’un premier cas d’usage IA.</p><ul class="mt-9 space-y-5 text-sm text-white/85"><li class="flex gap-3"><span aria-hidden="true" class="text-[#E8B8C7]">↗</span>Partez d’une difficulté concrète de votre quotidien.</li><li class="flex gap-3"><span aria-hidden="true" class="text-[#E8B8C7]">↗</span>Pas besoin d’avoir choisi un outil ou une technologie.</li><li class="flex gap-3"><span aria-hidden="true" class="text-[#E8B8C7]">↗</span>Cette demande ne constitue pas un achat.</li></ul><div class="mt-10 max-w-md border-t border-white/20 pt-6"><p class="text-sm leading-relaxed text-white/65">Une description générale suffit. Ne partagez aucune donnée client ni information confidentielle.</p></div></div>
+<div class="rounded-3xl bg-white p-6 shadow-2xl sm:p-9"><h3 class="text-xl font-semibold tracking-tight">Faisons le point sur votre priorité.</h3><p class="mt-2 text-sm text-stone-500">Les champs marqués d’un * sont obligatoires.</p>
+<!-- AVANT PUBLICATION : renseigner data-endpoint avec une URL HTTPS acceptant un POST JSON. Compléter les mentions de confidentialité et valider le traitement côté serveur. -->
+<form id="lead-form" data-endpoint="" class="mt-7 space-y-5" aria-describedby="privacy-note form-status">
+<div><label for="first-name" class="mb-2 block text-sm font-medium">Prénom *</label><input id="first-name" name="first_name" required maxlength="80" autocomplete="given-name" placeholder="Votre prénom" class="w-full rounded-xl border border-stone-300 bg-paper px-4 py-3 text-base placeholder:text-stone-400 focus:border-wine focus:outline-none focus:ring-2 focus:ring-wine/20"></div>
+<div><label for="email" class="mb-2 block text-sm font-medium">E-mail professionnel *</label><input id="email" name="email" type="email" required maxlength="254" autocomplete="email" placeholder="vous@entreprise.fr" class="w-full rounded-xl border border-stone-300 bg-paper px-4 py-3 text-base placeholder:text-stone-400 focus:border-wine focus:outline-none focus:ring-2 focus:ring-wine/20"></div>
+<div><label for="company" class="mb-2 block text-sm font-medium">Entreprise <span class="font-normal text-stone-500">— facultatif</span></label><input id="company" name="company" maxlength="160" autocomplete="organization" placeholder="Le nom de votre entreprise" class="w-full rounded-xl border border-stone-300 bg-paper px-4 py-3 text-base placeholder:text-stone-400 focus:border-wine focus:outline-none focus:ring-2 focus:ring-wine/20"></div>
+<div><label for="need" class="mb-2 block text-sm font-medium">Votre priorité <span class="font-normal text-stone-500">— facultatif</span></label><textarea id="need" name="need" rows="3" maxlength="1500" placeholder="Ex. : simplifier la préparation de nos comptes rendus." class="w-full resize-y rounded-xl border border-stone-300 bg-paper px-4 py-3 text-base placeholder:text-stone-400 focus:border-wine focus:outline-none focus:ring-2 focus:ring-wine/20"></textarea></div>
+<p id="privacy-note" class="text-xs leading-relaxed text-stone-500">Ces informations sont destinées au traitement de votre demande de contact, et non à une inscription automatique à une newsletter. Les modalités de traitement doivent être précisées avant l’ouverture du formulaire.</p>
+<button id="submit-button" type="submit" class="cta-glow flex w-full items-center justify-center gap-3 rounded-xl bg-wine px-5 py-4 text-sm font-semibold text-white hover:bg-wineDark disabled:cursor-wait disabled:opacity-60"><span>Demander à être recontacté</span><span aria-hidden="true">↗</span></button>
+<p id="form-status" role="status" aria-live="polite" aria-atomic="true" class="rounded-lg bg-stone-100 p-3 text-xs leading-relaxed text-stone-600">Formulaire de démonstration : la collecte n’est pas encore activée. Aucune donnée n’est envoyée.</p>
+<noscript><p class="text-sm text-wine">JavaScript est nécessaire pour utiliser ce formulaire. La collecte doit également être activée par l’éditeur.</p><style>#submit-button{display:none}</style></noscript>
+</form>
+</div>
+</div>
+</section>
+<!-- SECTION 5 / 5 : FAQ ET RAPPEL DU CTA -->
+<section id="faq" aria-labelledby="faq-title" class="px-5 py-20 sm:px-8 lg:py-24">
+<div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[.8fr_1.2fr] lg:gap-20">
+<div><p class="text-xs font-semibold uppercase tracking-[.18em] text-wine">Questions fréquentes</p><h2 id="faq-title" class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Avant de vous lancer.</h2><p class="mt-5 max-w-sm leading-relaxed text-stone-600">Une démarche exploratoire, sans promesse de résultat universel.</p><a id="rappel-cta" href="#inscription" class="cta-glow cta-glow-soft mt-7 inline-flex items-center gap-3 rounded-xl border border-wine/15 bg-white px-5 py-3 text-sm font-semibold text-wine hover:bg-wine hover:text-white"><span>Présenter mon besoin</span><span aria-hidden="true">↗</span></a></div>
+<div class="divide-y divide-silver border-y border-silver">
+<details class="group py-6"><summary class="flex cursor-pointer items-center justify-between gap-5 text-base font-semibold">Faut-il déjà savoir quel outil utiliser ?<span aria-hidden="true" class="faq-plus text-xl font-normal text-wine transition">+</span></summary><p class="mt-4 pr-6 text-sm leading-7 text-stone-600">Non. Vous pouvez commencer par décrire une tâche répétitive ou un point de blocage. Le choix d’un outil vient après la compréhension du besoin.</p></details>
+<details class="group py-6"><summary class="flex cursor-pointer items-center justify-between gap-5 text-base font-semibold">Que se passe-t-il après ma demande ?<span aria-hidden="true" class="faq-plus text-xl font-normal text-wine transition">+</span></summary><p class="mt-4 pr-6 text-sm leading-7 text-stone-600">Une fois la collecte ouverte, vos coordonnées et votre besoin permettront de préparer une prise de contact. Aucun achat ni abonnement n’est déclenché par le formulaire. Dans cette version de démonstration, aucun envoi n’a lieu.</p></details>
+<details class="group py-6"><summary class="flex cursor-pointer items-center justify-between gap-5 text-base font-semibold">L’IA peut-elle tout automatiser ?<span aria-hidden="true" class="faq-plus text-xl font-normal text-wine transition">+</span></summary><p class="mt-4 pr-6 text-sm leading-7 text-stone-600">Non. La pertinence dépend du processus, des données disponibles, des contraintes et du niveau de risque. Certaines tâches se prêtent à une assistance ; certaines décisions doivent rester humaines.</p></details>
+<details class="group py-6"><summary class="flex cursor-pointer items-center justify-between gap-5 text-base font-semibold">Dois-je transmettre des données confidentielles ?<span aria-hidden="true" class="faq-plus text-xl font-normal text-wine transition">+</span></summary><p class="mt-4 pr-6 text-sm leading-7 text-stone-600">Non. Décrivez simplement le processus concerné. Ne communiquez ni données clients, ni mots de passe, ni documents sensibles dans ce formulaire.</p></details>
+<details class="group py-6"><summary class="flex cursor-pointer items-center justify-between gap-5 text-base font-semibold">Quels gains puis-je attendre ?<span aria-hidden="true" class="faq-plus text-xl font-normal text-wine transition">+</span></summary><p class="mt-4 pr-6 text-sm leading-7 text-stone-600">Aucun gain chiffré n’est garanti à ce stade. Un objectif et une méthode de mesure doivent être définis avant tout test, puis les résultats observés dans votre contexte réel.</p></details>
+</div>
+</div>
+</section>
+</main>
+<footer id="footer" class="border-t border-silver bg-white px-5 py-8 sm:px-8"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-5 sm:flex-row sm:items-start"><div><p class="font-semibold tracking-tight">AI Business OS</p><p class="mt-2 text-xs text-stone-500">L’IA au service de vos priorités.</p></div><details class="max-w-lg text-xs text-stone-500"><summary class="cursor-pointer underline underline-offset-4">Informations légales et confidentialité</summary><p class="mt-3 leading-relaxed">Version de démonstration non destinée à collecter des données. Avant publication : renseigner l’identité et les coordonnées de l’éditeur, l’hébergeur, le responsable du traitement, la base légale, les destinataires, la durée de conservation, les modalités d’exercice des droits et les informations de recours applicables.</p></details></div></footer>
+<script>
+const form=document.getElementById('lead-form');
+const statusBox=document.getElementById('form-status');
+const submitButton=document.getElementById('submit-button');
+form.addEventListener('submit',async function(event){
+ event.preventDefault();
+ if(!form.reportValidity())return;
+ const endpoint=form.dataset.endpoint.trim();
+ if(!endpoint){statusBox.textContent='La collecte n’est pas encore ouverte. Votre demande n’a pas été envoyée et aucune donnée n’a été transmise.';return;}
+ let target;
+ try{target=new URL(endpoint,window.location.href);if(target.protocol!=='https:')throw new Error('HTTPS requis');}catch(error){statusBox.textContent='Le formulaire n’est pas correctement configuré. Aucune donnée n’a été envoyée.';return;}
+ submitButton.disabled=true;
+ form.setAttribute('aria-busy','true');
+ statusBox.textContent='Envoi de votre demande…';
+ const controller=new AbortController();
+ const timeout=setTimeout(()=>controller.abort(),15000);
+ try{
+  const payload=Object.fromEntries(new FormData(form).entries());
+  payload.source='ai-business-os-landing';
+  const response=await fetch(target.href,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:controller.signal});
+  if(!response.ok)throw new Error('Envoi non confirmé');
+  statusBox.textContent='Merci. Votre demande a bien été transmise.';
+  form.reset();
+ }catch(error){statusBox.textContent='Nous ne pouvons pas confirmer la réception de votre demande. Veuillez réessayer plus tard.';}
+ finally{clearTimeout(timeout);submitButton.disabled=false;form.removeAttribute('aria-busy');}
+});
+</script>
+</body>
+</html>
